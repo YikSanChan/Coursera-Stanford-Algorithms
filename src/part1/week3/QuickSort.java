@@ -11,14 +11,6 @@ public class QuickSort {
 
     private static int comparisons;
 
-    private static boolean isSorted(Comparable[] a) {
-        return isSorted(a, 0, a.length - 1);
-    }
-    private static boolean isSorted(Comparable[] a, int lo, int hi) {
-        for (int i = lo + 1; i <= hi; i++)
-            if (less(a[i], a[i-1])) return false;
-        return true;
-    }
     private static boolean less(Comparable v, Comparable w)
     {
         return v.compareTo(w) < 0;
