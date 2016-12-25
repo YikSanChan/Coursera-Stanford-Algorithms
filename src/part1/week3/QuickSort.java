@@ -22,7 +22,6 @@ public class QuickSort {
         a[to] = tmp;
     }
 
-    // 1st element as the pivot
     private static int partition(Comparable[] a, int lo, int hi)
     {
         // exchange the pivot element with the first element.
