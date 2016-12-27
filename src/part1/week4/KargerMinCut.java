@@ -90,7 +90,7 @@ public class KargerMinCut {
     public static void main(String[] args)
     {
         KargerMinCut kmc = new KargerMinCut();
-        kmc.readData("resource/KargerMinCut_Test5_Expect3.txt");
+        kmc.readData("resource/KargerMinCut.txt");
         for (int i = 0; i < kmc.vertices.size() * kmc.vertices.size(); i++)
         {
             System.out.println("********************************");
@@ -98,7 +98,6 @@ public class KargerMinCut {
             kmc.karger();
             System.out.println("Min Cut: " + kmc.minCut);
         }
-
         System.out.println(kmc.minCut);
     }
 
